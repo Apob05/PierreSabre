@@ -40,4 +40,11 @@ public class Yakuza extends Humain {
 				+ " sous dans ma poche. Hi ! Hi !");
 	}
 
+	@Override
+	public void direBonjour() {
+		super.direBonjour();
+		parler("Mon clan est celui de " + clan + ".");
+
+	}
+
 }
