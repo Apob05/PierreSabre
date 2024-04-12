@@ -1,6 +1,7 @@
 package histoire;
 
 import personnages.Commercant;
+import personnages.GrandMere;
 import personnages.Ronin;
 import personnages.Samourai;
 import personnages.Traitre;
@@ -16,14 +17,14 @@ public class HistoireTP5 {
 		Ronin roro = new Ronin("Roro", "shochu", 60);
 		Samourai akimoto = new Samourai("Miyamoto", "Akimoto", "saké", 80);
 		Traitre masako = new Traitre("Miyamoto", "Masako", "whisky", 100);
-
-		masako.faireLeGentil();
-		masako.ranconner(marco);
-		masako.ranconner(kumi);
-		masako.ranconner(chonin);
-		masako.ranconner(marco);
-		masako.faireConnaissancesAvec(yaku);
-		masako.faireLeGentil();
+		GrandMere grandMere = new GrandMere("Grand-Mère", 10);
+		grandMere.faireConnaissancesAvec(akimoto);
+		grandMere.faireConnaissancesAvec(yaku);
+		grandMere.faireConnaissancesAvec(masako);
+		grandMere.faireConnaissancesAvec(kumi);
+		grandMere.faireConnaissancesAvec(marco);
+		grandMere.faireConnaissancesAvec(chonin);
+		grandMere.ragoter();
 
 	}
 
